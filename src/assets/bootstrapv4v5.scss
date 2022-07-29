@@ -1,0 +1,41 @@
+@use  "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.float-left {
+  @extend .float-start;
+}
+
+.float-right {
+  @extend .float-end;
+}
+
+.text-left {
+  @extend .text-start;
+}
+
+.text-right {
+  @extend .text-end;
+}
+
+@for $i from 1 through 5 {
+  .pl-#{$i} {
+    @extend .ps-#{$i};
+  }
+}
+
+@for $i from 1 through 5 {
+  .pr-#{$i} {
+    @extend .pe-#{$i};
+  }
+}
+
+@for $i from 1 through 5 {
+  .ml-#{$i} {
+    @extend .ms-#{$i};
+  }
+}
+
+@for $i from 1 through 5 {
+  .mr-#{$i} {
+    @extend .me-#{$i};
+  }
+}
