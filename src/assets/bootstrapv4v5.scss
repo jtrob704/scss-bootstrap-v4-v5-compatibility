@@ -1,4 +1,6 @@
-@use  "../../node_modules/bootstrap/scss/bootstrap.scss";
+$enable-negative-margins: true;
+
+@use  "../../node_modules/bootstrap/scss/bootstrap";
 
 .float-left {
   @extend .float-start;
@@ -16,25 +18,25 @@
   @extend .text-end;
 }
 
-@for $i from 1 through 5 {
+@for $i from 0 through 5 {
   .pl-#{$i} {
     @extend .ps-#{$i};
   }
 }
 
-@for $i from 1 through 5 {
+@for $i from 0 through 5 {
   .pr-#{$i} {
     @extend .pe-#{$i};
   }
 }
 
-@for $i from 1 through 5 {
+@for $i from 0 through 5 {
   .ml-#{$i} {
     @extend .ms-#{$i};
   }
 }
 
-@for $i from 1 through 5 {
+@for $i from 0 through 5 {
   .mr-#{$i} {
     @extend .me-#{$i};
   }
