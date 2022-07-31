@@ -1,6 +1,5 @@
-$enable-negative-margins: true;
-
-@use  "../../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 .float-left {
   @extend .float-start;
@@ -39,5 +38,17 @@ $enable-negative-margins: true;
 @for $i from 0 through 5 {
   .mr-#{$i} {
     @extend .me-#{$i};
+  }
+}
+
+@for $i from 1 through 5 {
+  .ml-n#{$i} {
+    @extend .ms-n#{$i};
+  }
+}
+
+@for $i from 1 through 5 {
+  .mr-n#{$i} {
+    @extend .me-n#{$i};
   }
 }
